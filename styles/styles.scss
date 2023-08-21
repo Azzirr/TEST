@@ -278,7 +278,17 @@ $custom-bg-color: #1B5B31;
     color: #F5F0EC;
 }
 .footer-padding-element{
-    height: 124px;
+    padding-top: 62px;
+    margin-bottom: 62px;
+    border-bottom: 1px solid #F5F0EC;
+    @media only screen and (min-width: 1440px) {
+        width: 1040px !important;
+        margin-left: 16.66%;
+    }
+    @media only screen and (min-width: 1920px) {
+        width: 1450px !important;
+        margin-left: 16.66%;
+    }
 }
 .socials{
     margin-right: 48px;
