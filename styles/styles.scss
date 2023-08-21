@@ -1,0 +1,301 @@
+// Navbar styles
+.navbar {
+    .nav-link {
+        color: inherit;
+    }
+    .nav-item-margin{
+        margin-right: 48px;
+    }
+}
+// Main section styles
+
+$main-bg-color: #DCC1AB;
+
+.main-section {
+    background-color: $main-bg-color;
+
+    .first-box,
+    .second-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-container {
+        max-width: 70%;
+    }
+
+    .header-size {
+        @media only screen and (min-width: 1900px){
+            font-size: 60px;
+        }
+        line-height: 1.2;
+    }
+
+    .text-content {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .second-box {
+        img {
+            max-width: 100%;
+        }
+    }
+}
+
+
+.buttons {
+    .first-button,
+    .second-button {
+        padding: 12px 24px 14px 24px;
+        border-radius: 200px;
+    }
+
+    .first-button {
+        background-color: #1B5B31;
+        color: #FFFFFF;
+        border: 0;
+        @media only screen and (min-width: 1900px) {
+            width: 208px;
+        }
+    }
+
+    .second-button {
+        padding-right: 22px;
+        padding-left: 22px;
+        border: 1px solid #1B5B31;
+        color: #1B5B31;
+        @media only screen and (min-width: 1440px) {
+            margin-left: 36px;
+        }
+        @media only screen and (max-width: 1024px) {
+            width: 200px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        width: 249px;
+        background-color: $main-bg-color;
+    }
+}
+
+// Offer section styles
+$offer-bg-color: rgba(255, 255, 255, 0.3);
+$primary-color: #1B5B31;
+
+.offer-section {
+    width: 100vh;
+    background-color: #F5F0EC;
+}
+.offer-main-padding{
+    padding-bottom: 160px;
+}
+.offer-content {
+    padding: 96px 0;
+}
+
+.small-header {
+    font-size: 12px;
+}
+
+.offer-header {
+    font-size: 48px;
+}
+
+.offer-content {
+    color: #111111;
+}
+
+.offer-small-container {
+    border-radius: 28px;
+    background-color: $offer-bg-color;
+    padding: 40px !important;
+}
+
+.offer-small-container-margin {
+    @media only screen and (min-width: 768px) {
+        margin-left: 64px;
+    }
+    @media only screen and (min-width: 320px) {
+        margin-bottom: 20px;
+    }
+}
+
+.offer-text {
+    font-size: 14px;
+}
+
+.check-more {
+    color: $primary-color;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+
+// About company styles
+$custom-bg-color: #1B5B31;
+
+.custom-section {
+    background-color: $custom-bg-color;
+
+    .col-md-6 {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .text-white {
+        p {
+            font-size: 12px;
+        }
+
+        h2 {
+            font-size: 36px;
+            i {
+                font-style: italic;
+            }
+        }
+
+        span {
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 20px;
+        }
+    }
+
+}
+.no-padding {
+    .col-md-6 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+.check-us-button{
+    padding: 12px 22px 14px 22px;
+    border: 1px solid #F5F0EC;
+    color: #FFFFFF;
+    background-color: #1B5B31;
+    border-radius: 200px;
+    width: 194px;
+}
+
+// Realizations styles
+.realizations-small-header{
+    font-size: 12px;
+    color: #1B5B31;
+}
+.realizations-header{
+    padding-bottom: 96px;
+    font-size: 48px;
+}
+.realizations-section{
+    padding-top: 120px;
+    background-color: #DCC1AB;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media only screen and (max-width: 425px) {
+        grid-template-columns: 1fr;
+    }
+}
+.grid-item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    @media only screen and (max-width: 425px) {
+        margin: 0;
+        width: 100%;
+    }
+}
+.grid-item img {
+    width: 100%;
+    height: auto;
+    @media only screen and (max-width: 425px) {
+        margin-bottom: 10px;
+    }
+
+}
+.more-button{
+    border-radius: 200px;
+    width: 123px;
+    height: 50px;
+    color: #111111;
+    padding: 12px 22px 14px 22px;
+    border: 1px solid #111111;
+    background-color: #DCC1AB;
+}
+.grid-item-opacity{
+    opacity: 0.4;
+    @media only screen and (max-width: 425px) {
+        opacity: 1;
+    }
+}
+
+// Contact us styles
+.contact-section {
+    background-color: #F5F0EC;
+    padding: 60px 1rem;
+}
+
+.contact-content {
+    background-color: #1B5B31;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: white;
+}
+
+.contact-button {
+    border: none;
+    border-radius: 200px;
+    background-color: #F5F0EC;
+    padding: 10px 24px 12px 24px;
+    color: #1B5B31;
+}
+
+// Footer styles
+.footer-section{
+    background-color: #111111;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+.footer-button {
+    background-color: #1B5B31;
+    color: #FFFFFF;
+    border: 0;
+    @media only screen and (min-width: 1900px) {
+        width: 208px;
+    }
+    width: 208px;
+    height: 50px;
+    border-radius: 200px;
+}
+.footer-text{
+    color: #F5F0EC;
+}
+.footer-padding-element{
+    height: 124px;
+}
+.socials{
+    margin-right: 48px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.mail-style{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.center-up-to-1440{
+    @media only screen and (min-width: 1441px){
+        display: flex;
+        flex-direction: column;
+        padding-left: 325px;
+    }
+}
