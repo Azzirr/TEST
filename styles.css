@@ -8,11 +8,23 @@
 .main-section {
   background-color: #DCC1AB;
 }
-.main-section .first-box,
+.main-section .first-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
 .main-section .second-box {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media only screen and (min-width: 1440px) and (max-width: 1440px) {
+  .main-section .second-box {
+    align-items: end;
+    justify-content: end;
+    padding: 0;
+  }
 }
 .main-section .text-container {
   max-width: 70%;

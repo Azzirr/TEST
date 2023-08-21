@@ -13,12 +13,21 @@ $main-bg-color: #DCC1AB;
 
 .main-section {
     background-color: $main-bg-color;
-
-    .first-box,
+    .first-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
     .second-box {
         display: flex;
         align-items: center;
         justify-content: center;
+        @media only screen and (min-width: 1440px) and (max-width: 1440px){
+            align-items: end;
+            justify-content: end;
+            padding: 0;
+        }
     }
 
     .text-container {
