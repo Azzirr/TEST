@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navbar -->
@@ -162,44 +161,44 @@
             <h2 class="realizations-header">Nasze <i>projekty</i></h2>
         </div>
         <div class="grid" id="realizationsList">
-            <div class="grid-item">
-                <img src="./styles/realizationsSection/Photo.png" alt="Two-story Garden">
+            <div class="grid-item thumbnail">
+                <img tabindex="0" src="./styles/realizationsSection/Photo.png" data-lightbox="gallery" alt="Two-story Garden">
             </div>
-            <div class="grid-item">
-                <img src="./styles/realizationsSection/Photo (1).png" alt="Pool inside house">
+            <div class="grid-item thumbnail">
+                <img tabindex="1" src="./styles/realizationsSection/Photo (1).png" data-lightbox="gallery" alt="Pool inside house">
             </div>
-            <div class="grid-item">
-                <img src="./styles/realizationsSection/Photo (2).png" alt="Big garden with flowers">
+            <div class="grid-item thumbnail">
+                <img tabindex="2" src="./styles/realizationsSection/Photo (2).png" data-lightbox="gallery" alt="Big garden with flowers">
             </div>
-            <div class="grid-item">
-                <img src="./styles/realizationsSection/Photo (3).png" alt="Covered garden">
+            <div class="grid-item thumbnail">
+                <img tabindex="3" src="./styles/realizationsSection/Photo (3).png" data-lightbox="gallery" alt="Covered garden">
             </div>
-            <div class="grid-item">
-                <img src="./styles/realizationsSection/Photo (4).png" alt="Garden with fishes">
+            <div class="grid-item thumbnail">
+                <img tabindex="4" src="./styles/realizationsSection/Photo (4).png" data-lightbox="gallery" alt="Garden with fishes">
             </div>
-            <div class="grid-item grid-item-opacity">
-                <img src="./styles/realizationsSection/Photo (5).png" alt="Path to garden">
+            <div class="grid-item thumbnail grid-item-opacity">
+                <img tabindex="5" src="./styles/realizationsSection/Photo (5).png" data-lightbox="gallery" alt="Path to garden">
             </div>
-            <div class="grid-item grid-item-opacity">
-                <img src="./styles/realizationsSection/Photo (6).png" alt="Spiral staircase">
+            <div class="grid-item thumbnail grid-item-opacity">
+                <img tabindex="6" src="./styles/realizationsSection/Photo (6).png" data-lightbox="gallery" alt="Spiral staircase">
             </div>
-            <div class="grid-item grid-item-opacity">
-                <img src="./styles/realizationsSection/Photo (7).png" alt="Tarrace">
+            <div class="grid-item thumbnail grid-item-opacity">
+                <img tabindex="7" src="./styles/realizationsSection/Photo (7).png" data-lightbox="gallery" alt="Tarrace">
             </div>
-            <div class="grid-item grid-item-opacity">
-                <img src="./styles/realizationsSection/Photo (8).png" alt="Pink flowers">
+            <div class="grid-item thumbnail grid-item-opacity">
+                <img tabindex="8" src="./styles/realizationsSection/Photo (8).png" data-lightbox="gallery" alt="Pink flowers">
             </div>
-            <div class="grid-item d-none ">
-                <img src="./styles/realizationsSection/Photo (9).jpg" alt="Wood roof">
+            <div class="grid-item thumbnail d-none ">
+                <img tabindex="9" src="./styles/realizationsSection/Photo (9).jpg" data-lightbox="gallery" alt="Wood roof">
             </div>
-            <div class="grid-item d-none">
-                <img src="./styles/realizationsSection/Photo (10).jpg" alt="Green garden on the hill">
+            <div class="grid-item thumbnail d-none">
+                <img tabindex="10" src="./styles/realizationsSection/Photo (10).jpg" data-lightbox="gallery" alt="Green garden on the hill">
             </div>
-            <div class="grid-item d-none ">
-                <img src="./styles/realizationsSection/Photo (11).jpg" alt="Big garden on the hill">
+            <div class="grid-item thumbnail d-none ">
+                <img tabindex="11" src="./styles/realizationsSection/Photo (11).jpg" data-lightbox="gallery" alt="Big garden on the hill">
             </div>
-            <div class="grid-item d-none">
-                <img src="./styles/realizationsSection/Photo (12).jpg" alt="Seedlings">
+            <div class="grid-item thumbnail d-none">
+                <img tabindex="12" src="./styles/realizationsSection/Photo (12).jpg" data-lightbox="gallery" alt="Seedlings">
             </div>
         </div>
         <div class="d-flex justify-content-center">
@@ -227,21 +226,9 @@
             </div>
         </div>
     </section>
-    
     <!-- Footer -->
     <footer class="footer-section">
         <div class="row">
-            <!-- <div class="row container">
-                <div class="col-md-3 offset-md-2 d-flex align-items-center">
-                    <img src="./styles/logo/footerLogo.svg" alt="Footer logo">
-                </div>
-                <div class="col-md-3 offset-sm-0 offset-md-1 d-flex align-items-center">
-                    <span class="footer-text ">Daj znać, co możemy dla Ciebie zrobić!</span>
-                </div>
-                <div class="col-md-3 offset-3 offset-sm-0">
-                    <button class="footer-button ">Skontaktuj się z nami</button>
-                </div>
-            </div> -->
             <div class="row container">
                 <div class="col-md-3 offset-md-2 offset-4 mb-2 mb-md-0 d-flex align-items-center flex-sm-column flex-lg-row">
                     <img src="./styles/logo/footerLogo.svg" alt="Footer logo">
@@ -278,9 +265,28 @@
         </div>
     </footer>
 
+    <!-- Gallery popup -->
+    <div class="popup hidden">
+        <button aria-label="Zamknij popup" class="popup__close">&#x2715;</button>
+        <img src="" alt="" class="popup__img" />
+        <button
+            aria-label="Poprzednie zdjęcie"
+            class="popup__arrow popup__arrow--left"
+        >
+        &#8592;
+        </button>
+        <button
+            aria-label="Następne zdjęcie"
+            class="popup__arrow popup__arrow--right"
+        >
+        &#8594;
+        </button>
+    </div>
+
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <script src="./bundle.js"></script>
     <script src="./scripts.js"></script>
+    <script src="./gallery.js"></script>
 </body>
 </html>

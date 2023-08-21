@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "lightbox2": "^2.11.4",
     "masonry-layout": "^4.2.2",
     "scss": "^0.2.4"
   },
