@@ -61,7 +61,7 @@
     </header>
     
     <!-- Main section -->
-    <main class="container-fluid main-section">
+    <!-- <main class="container-fluid main-section">
         <div class="row">
             <div class="col-md-6 first-box d-flex align-items-center">
                 <div class="text-container">
@@ -85,7 +85,49 @@
                 <img src="./styles/mainSection/second-box-photo.png" alt="Garden">
             </div>
         </div>
+    </main> -->
+
+    <main class="container-fluid main-section">
+        <div class="row">
+            <div class="col-md-6 first-box d-flex align-items-center">
+                <div class="text-container">
+                    <h1 class="header-size mb-5">
+                        Nowoczesna </br>
+                        aranżacja </br>
+                        Twojego ogrodu
+                    </h1>
+                    <span class="text-content">
+                        Marka GiardDesign to wieloletnie doświadczenie i wysoka </br>
+                        estetyka realizacji. Oferujemy kompleksowy zakres usług </br>
+                        z indywidualnym podejściem do każdego projektu.
+                    </span>
+                    <div class="mt-5 buttons">
+                        <button class="first-button" onclick="scrollToContactUs()">Skontaktuj się z nami</button>
+                        <button class="second-button" onclick="scrollToRealizations()">Zobacz nasze realizacje &#8595;</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center second-box">
+                <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./styles/mainSection/second-box-photo.png" class="d-block" alt="Garden">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./styles/mainSection/second-box-photo-v2.png" class="d-block" alt="Another Garden">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                        <img src="./styles/mainSection/left-arrow.png" alt="Previous" class="carousel-control-icon" />
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                        <img src="./styles/mainSection/right-arrow.png" alt="Next" class="carousel-control-icon" />
+                    </button>
+                </div>
+            </div>
+        </div>
     </main>
+
 
     <!-- Offer section -->
     <section class="container-fluid offer-section">
@@ -131,11 +173,10 @@
                 </a>
             </div>
         </div>
-        
     </section>
 
     <!-- About company -->
-    <section class="container-fluid custom-section">
+    <section class="container-fluid about-section">
         <div class="row no-padding">
             <div class="col-md-6">
                 <img src="./styles/aboutCompanySection/left-photo.png" alt="House inside the woods" class="img-fluid">

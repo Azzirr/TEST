@@ -140,26 +140,26 @@
   text-underline-offset: 7px;
 }
 
-.custom-section {
+.about-section {
   background-color: #1B5B31;
 }
-.custom-section .col-md-6 img {
+.about-section .col-md-6 img {
   max-width: 100%;
   height: auto;
 }
-.custom-section .text-white p {
+.about-section .text-white p {
   font-size: 12px;
 }
-.custom-section .text-white h2 {
+.about-section .text-white h2 {
   font-size: 36px;
 }
-.custom-section .text-white h2 i {
+.about-section .text-white h2 i {
   font-style: italic;
 }
-.custom-section .text-white span {
+.about-section .text-white span {
   font-size: 16px;
 }
-.custom-section .text-white button {
+.about-section .text-white button {
   margin-top: 20px;
 }
 
