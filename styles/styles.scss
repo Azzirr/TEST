@@ -119,6 +119,12 @@ $primary-color: #1B5B31;
     border-radius: 28px;
     background-color: $offer-bg-color;
     padding: 40px !important;
+    text-decoration: none;
+    color: inherit;
+}
+.offer-small-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .offer-small-container-margin {

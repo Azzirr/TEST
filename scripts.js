@@ -11,3 +11,17 @@ function removeOpacityClass() {
     expandButton.style.display = "none";
     window.onload();
 }
+
+function scrollToRealizations() {
+    var realizationsSection = document.getElementById("realizations");
+    realizationsSection.scrollIntoView({ behavior: "smooth" });
+}
+
+function scrollToContactUs() {
+    var contactUsSection = document.getElementById("contactUs");
+    contactUsSection.scrollIntoView({ behavior: "smooth" });
+}
+
+function redirectToInstagram() {
+    window.open("https://www.instagram.com/", "_blank");
+}
