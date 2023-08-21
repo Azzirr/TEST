@@ -268,7 +268,21 @@
 }
 
 .footer-padding-element {
-  height: 124px;
+  padding-top: 62px;
+  margin-bottom: 62px;
+  border-bottom: 1px solid #F5F0EC;
+}
+@media only screen and (min-width: 1440px) {
+  .footer-padding-element {
+    width: 1040px !important;
+    margin-left: 16.66%;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  .footer-padding-element {
+    width: 1450px !important;
+    margin-left: 16.66%;
+  }
 }
 
 .socials {
@@ -291,4 +305,4 @@
     flex-direction: column;
     padding-left: 325px;
   }
-}
+}/*# sourceMappingURL=styles.css.map */
