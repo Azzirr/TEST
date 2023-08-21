@@ -13,7 +13,7 @@ function removeOpacityClass() {
 }
 
 function scrollToRealizations() {
-    var realizationsSection = document.getElementById("realizations");
+    var realizationsSection = document.getElementById("realizationsList");
     realizationsSection.scrollIntoView({ behavior: "smooth" });
 }
 
@@ -25,3 +25,21 @@ function scrollToContactUs() {
 function redirectToInstagram() {
     window.open("https://www.instagram.com/", "_blank");
 }
+
+// Disable gallery
+const thumbnailElements = document.querySelectorAll('.thumbnail');
+
+function updateThumbnailClass() {
+  const screenWidth = window.innerWidth;
+
+  thumbnailElements.forEach(element => {
+    if (screenWidth >= 320 && screenWidth <= 756) {
+      element.classList.remove('thumbnail');
+    } else {
+      element.classList.add('thumbnail');
+    }
+  });
+}
+
+updateThumbnailClass();
+window.addEventListener('resize', updateThumbnailClass);
