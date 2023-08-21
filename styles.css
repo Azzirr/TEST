@@ -293,15 +293,19 @@
 }
 @media only screen and (min-width: 1440px) {
   .footer-padding-element {
-    width: 1040px !important;
+    width: 970px !important;
     margin-left: 16.66%;
   }
 }
 @media only screen and (min-width: 1920px) {
   .footer-padding-element {
-    width: 1320px !important;
+    width: 1270px !important;
     margin-left: 16.66%;
   }
+}
+
+.footer-padding-element-2 {
+  height: 120px;
 }
 
 .socials {
@@ -312,7 +316,6 @@
 }
 
 .mail-style {
-  margin-left: 30px;
   text-decoration: none;
   color: #FFFFFF;
   font-size: 14px;
