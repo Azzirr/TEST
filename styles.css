@@ -1,10 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
 .navbar .nav-link {
   color: inherit;
 }
 .navbar .nav-item-margin {
   margin-right: 48px;
 }
-
 .main-section {
   background-color: #DCC1AB;
 }
@@ -30,9 +30,11 @@
   max-width: 70%;
 }
 .main-section .header-size {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
   line-height: 1.2;
 }
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width: 1440px) {
   .main-section .header-size {
     font-size: 60px;
   }
@@ -44,9 +46,7 @@
 .main-section .second-box img {
   max-width: 100%;
 }
-
-.buttons .first-button,
-.buttons .second-button {
+.buttons .first-button, .buttons .second-button {
   padding: 12px 24px 14px 24px;
   border-radius: 200px;
 }
@@ -80,32 +80,42 @@
     margin-bottom: 10px;
   }
 }
-
 .offer-section {
   width: 100vh;
   background-color: #F5F0EC;
 }
-
+@media only screen and (min-width: 375px) {
+  .offer-section h2, .offer-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+}
+@media only screen and (max-width: 374px) {
+  .offer-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+  }
+  .offer-section h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+  }
+}
 .offer-main-padding {
   padding-bottom: 160px;
 }
-
 .offer-content {
   padding: 96px 0;
 }
-
 .small-header {
   font-size: 12px;
 }
-
 .offer-header {
   font-size: 48px;
 }
-
 .offer-content {
   color: #111111;
 }
-
 .offer-small-container {
   border-radius: 28px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -113,12 +123,10 @@
   text-decoration: none;
   color: inherit;
 }
-
 .offer-small-container:hover {
   transform: translateY(-5px);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 @media only screen and (min-width: 768px) {
   .offer-small-container-margin {
     margin-left: 64px;
@@ -129,17 +137,14 @@
     margin-bottom: 20px;
   }
 }
-
 .offer-text {
   font-size: 14px;
 }
-
 .check-more {
   color: #1B5B31;
   text-decoration: underline;
   text-underline-offset: 7px;
 }
-
 .about-section {
   background-color: #1B5B31;
 }
@@ -147,27 +152,30 @@
   max-width: 100%;
   height: auto;
 }
-.about-section .text-white p {
+.about-section .about-text p {
   font-size: 12px;
+  color: #F5F0EC;
 }
-.about-section .text-white h2 {
-  font-size: 36px;
+.about-section .about-text h2 {
+  font-size: 48px;
+  color: #F5F0EC;
+  font-family: 'Montserrat', sans-serif;
 }
-.about-section .text-white h2 i {
+.about-section .about-text h2 i {
   font-style: italic;
 }
-.about-section .text-white span {
+.about-section .about-text span {
   font-size: 16px;
+  color: #F5F0EC;
 }
-.about-section .text-white button {
+.about-section .about-text button {
   margin-top: 20px;
+  color: #F5F0EC;
 }
-
 .no-padding .col-md-6 {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-
 .check-us-button {
   padding: 12px 22px 14px 22px;
   border: 1px solid #F5F0EC;
@@ -176,22 +184,18 @@
   border-radius: 200px;
   width: 194px;
 }
-
 .realizations-small-header {
   font-size: 12px;
   color: #1B5B31;
 }
-
 .realizations-header {
   padding-bottom: 96px;
   font-size: 48px;
 }
-
 .realizations-section {
   padding-top: 120px;
   background-color: #DCC1AB;
 }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -201,7 +205,6 @@
     grid-template-columns: 1fr;
   }
 }
-
 .grid-item {
   width: calc(33.33% - 20px);
   margin: 10px;
@@ -212,7 +215,6 @@
     width: 100%;
   }
 }
-
 .grid-item img {
   width: 100%;
   height: auto;
@@ -222,7 +224,6 @@
     margin-bottom: 10px;
   }
 }
-
 .more-button {
   border-radius: 200px;
   width: 123px;
@@ -232,7 +233,6 @@
   border: 1px solid #111111;
   background-color: #DCC1AB;
 }
-
 .grid-item-opacity {
   opacity: 0.4;
 }
@@ -241,19 +241,16 @@
     opacity: 1;
   }
 }
-
 .contact-section {
   background-color: #F5F0EC;
   padding: 60px 1rem;
 }
-
 .contact-content {
   background-color: #1B5B31;
   padding-top: 120px;
   padding-bottom: 120px;
   color: white;
 }
-
 .contact-button {
   border: none;
   border-radius: 200px;
@@ -261,13 +258,19 @@
   padding: 10px 24px 12px 24px;
   color: #1B5B31;
 }
-
+.contact-text p {
+  color: #F5F0EC;
+  font-size: 16px;
+}
+.contact-text h2 {
+  color: #F5F0EC;
+  font-family: 'Montserrat', sans-serif;
+}
 .footer-section {
   background-color: #111111;
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
 .footer-button {
   background-color: #1B5B31;
   color: #FFFFFF;
@@ -281,11 +284,9 @@
     width: 208px;
   }
 }
-
 .footer-text {
   color: #F5F0EC;
 }
-
 .footer-padding-element {
   padding-top: 62px;
   margin-bottom: 62px;
@@ -303,24 +304,20 @@
     margin-left: 16.66%;
   }
 }
-
 .footer-padding-element-2 {
   height: 120px;
 }
-
 .socials {
   margin-right: 48px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #F5F0EC;
   font-size: 14px;
 }
-
 .mail-style {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #F5F0EC;
   font-size: 14px;
 }
-
 @media only screen and (min-width: 1441px) {
   .center-up-to-1440 {
     display: flex;
@@ -328,7 +325,6 @@
     padding-left: 325px;
   }
 }
-
 .gallery {
   background: linear-gradient(60deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
   border-radius: 20px;
@@ -338,18 +334,15 @@
   list-style-type: none;
   padding: 64px;
 }
-
 .thumbnail {
   width: calc(33.33% - 20px);
   margin: 10px;
 }
-
 .thumbnail:hover {
   cursor: pointer;
   transition: transform 0.3s ease;
   transform: scale(1.05);
 }
-
 .popup {
   align-content: center;
   animation: fadeIn 0.3s;
@@ -364,20 +357,16 @@
   top: 0;
   width: 100vw;
 }
-
 .popup.hidden {
   display: none;
 }
-
 .popup.fade-out {
   animation: fadeOut 0.3s both;
 }
-
 .popup__img {
   max-height: 80%;
   max-width: 80%;
 }
-
 .popup__close {
   background-color: transparent;
   border: none;
@@ -388,7 +377,6 @@
   right: 64px;
   top: 64px;
 }
-
 .popup__arrow {
   border: none;
   border-radius: 50%;
@@ -399,26 +387,19 @@
   top: 50%;
   width: 128px;
 }
-
-.popup__close,
-.popup__arrow {
+.popup__close, .popup__arrow {
   opacity: 0.5;
   transition: opacity 0.3s;
 }
-
-.popup__close:hover,
-.popup__arrow:hover {
+.popup__close:hover, .popup__arrow:hover {
   opacity: 1;
 }
-
 .popup__arrow--left {
   left: 5%;
 }
-
 .popup__arrow--right {
   right: 5%;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -434,4 +415,4 @@
   to {
     opacity: 0;
   }
-}/*# sourceMappingURL=styles.css.map */
+}

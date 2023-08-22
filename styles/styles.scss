@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+$main-bg-color: #DCC1AB;
+$second-bg-color: #1B5B31;
+$third-bg-color: #F5F0EC;
+$offer-bg-color: rgba(255, 255, 255, 0.3);
+$first-color: #1B5B31;
+$second-color: #FFFFFF;
+$third-color: #111111;
+$four-color: #F5F0EC;
+
 // Navbar styles
 .navbar {
     .nav-link {
@@ -8,9 +18,6 @@
     }
 }
 // Main section styles
-
-$main-bg-color: #DCC1AB;
-
 .main-section {
     background-color: $main-bg-color;
     .first-box{
@@ -35,7 +42,9 @@ $main-bg-color: #DCC1AB;
     }
 
     .header-size {
-        @media only screen and (min-width: 1900px){
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        @media only screen and (min-width: 1440px){
             font-size: 60px;
         }
         line-height: 1.2;
@@ -62,8 +71,8 @@ $main-bg-color: #DCC1AB;
     }
 
     .first-button {
-        background-color: #1B5B31;
-        color: #FFFFFF;
+        background-color: $second-bg-color;
+        color: $second-color;
         border: 0;
         @media only screen and (min-width: 1900px) {
             width: 208px;
@@ -73,8 +82,8 @@ $main-bg-color: #DCC1AB;
     .second-button {
         padding-right: 22px;
         padding-left: 22px;
-        border: 1px solid #1B5B31;
-        color: #1B5B31;
+        border: 1px solid $first-color;
+        color: $first-color;
         @media only screen and (min-width: 1440px) {
             margin-left: 36px;
         }
@@ -89,12 +98,27 @@ $main-bg-color: #DCC1AB;
 }
 
 // Offer section styles
-$offer-bg-color: rgba(255, 255, 255, 0.3);
-$primary-color: #1B5B31;
 
 .offer-section {
     width: 100vh;
-    background-color: #F5F0EC;
+    background-color: $third-bg-color;
+    @media only screen and(min-width: 375px){
+        h2, h3{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+    }
+    @media only screen and(max-width: 374px){
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+            font-size: 40px;
+        }
+        h3{
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 500;
+        }
+    }
 }
 .offer-main-padding{
     padding-bottom: 160px;
@@ -112,7 +136,7 @@ $primary-color: #1B5B31;
 }
 
 .offer-content {
-    color: #111111;
+    color: $third-color;
 }
 
 .offer-small-container {
@@ -141,17 +165,14 @@ $primary-color: #1B5B31;
 }
 
 .check-more {
-    color: $primary-color;
+    color: $first-color;
     text-decoration: underline;
     text-underline-offset: 7px;
 }
 
-
 // About company styles
-$custom-bg-color: #1B5B31;
-
 .about-section {
-    background-color: $custom-bg-color;
+    background-color: $second-bg-color;
 
     .col-md-6 {
         img {
@@ -160,13 +181,16 @@ $custom-bg-color: #1B5B31;
         }
     }
 
-    .text-white {
+    .about-text {
         p {
             font-size: 12px;
+            color: $four-color;
         }
 
         h2 {
-            font-size: 36px;
+            font-size: 48px;
+            color: $four-color;
+            font-family: 'Montserrat', sans-serif;
             i {
                 font-style: italic;
             }
@@ -174,10 +198,12 @@ $custom-bg-color: #1B5B31;
 
         span {
             font-size: 16px;
+            color: $four-color
         }
 
         button {
             margin-top: 20px;
+            color: $four-color;
         }
     }
 
@@ -190,9 +216,9 @@ $custom-bg-color: #1B5B31;
 }
 .check-us-button{
     padding: 12px 22px 14px 22px;
-    border: 1px solid #F5F0EC;
-    color: #FFFFFF;
-    background-color: #1B5B31;
+    border: 1px solid $four-color;
+    color: $second-color;
+    background-color: $second-bg-color;
     border-radius: 200px;
     width: 194px;
 }
@@ -200,7 +226,7 @@ $custom-bg-color: #1B5B31;
 // Realizations styles
 .realizations-small-header{
     font-size: 12px;
-    color: #1B5B31;
+    color: $first-color;
 }
 .realizations-header{
     padding-bottom: 96px;
@@ -208,7 +234,7 @@ $custom-bg-color: #1B5B31;
 }
 .realizations-section{
     padding-top: 120px;
-    background-color: #DCC1AB;
+    background-color: $main-bg-color;
 }
 .grid {
     display: grid;
@@ -238,10 +264,10 @@ $custom-bg-color: #1B5B31;
     border-radius: 200px;
     width: 123px;
     height: 50px;
-    color: #111111;
+    color: $third-color;
     padding: 12px 22px 14px 22px;
-    border: 1px solid #111111;
-    background-color: #DCC1AB;
+    border: 1px solid $third-color;
+    background-color: $main-bg-color;
 }
 .grid-item-opacity{
     opacity: 0.4;
@@ -252,12 +278,12 @@ $custom-bg-color: #1B5B31;
 
 // Contact us styles
 .contact-section {
-    background-color: #F5F0EC;
+    background-color: $third-bg-color;
     padding: 60px 1rem;
 }
 
 .contact-content {
-    background-color: #1B5B31;
+    background-color: $second-bg-color;
     padding-top: 120px;
     padding-bottom: 120px;
     color: white;
@@ -266,9 +292,19 @@ $custom-bg-color: #1B5B31;
 .contact-button {
     border: none;
     border-radius: 200px;
-    background-color: #F5F0EC;
+    background-color: $third-bg-color;
     padding: 10px 24px 12px 24px;
-    color: #1B5B31;
+    color: $first-color;
+}
+.contact-text{
+    p{
+        color: $four-color;
+        font-size: 16px;
+    }
+    h2{
+        color: $four-color;
+        font-family: 'Montserrat', sans-serif;
+    }
 }
 
 // Footer styles
@@ -279,8 +315,8 @@ $custom-bg-color: #1B5B31;
 
 }
 .footer-button {
-    background-color: #1B5B31;
-    color: #FFFFFF;
+    background-color: $second-bg-color;
+    color: $second-color;
     border: 0;
     @media only screen and (min-width: 1900px) {
         width: 208px;
@@ -290,12 +326,12 @@ $custom-bg-color: #1B5B31;
     border-radius: 200px;
 }
 .footer-text{
-    color: #F5F0EC;
+    color: $four-color;
 }
 .footer-padding-element{
     padding-top: 62px;
     margin-bottom: 62px;
-    border-bottom: 1px solid #F5F0EC;
+    border-bottom: 1px solid $four-color;
     @media only screen and (min-width: 1440px) {
         width: 970px !important;
         margin-left: 16.66%;
@@ -311,12 +347,12 @@ $custom-bg-color: #1B5B31;
 .socials{
     margin-right: 48px;
     text-decoration: none;
-    color: #FFFFFF;
+    color: $four-color;
     font-size: 14px;
 }
 .mail-style{
     text-decoration: none;
-    color: #FFFFFF;
+    color: $four-color;
     font-size: 14px;
 }
 .center-up-to-1440{
