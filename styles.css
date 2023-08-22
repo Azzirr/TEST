@@ -49,12 +49,23 @@
 .buttons .first-button, .buttons .second-button {
   padding: 12px 24px 14px 24px;
   border-radius: 200px;
+  transition: background-color 0.3s, transform 0.3s, border-color 0.3s;
 }
 .buttons .first-button {
   background-color: #1B5B31;
   color: #FFFFFF;
   border: 0;
 }
+.buttons .first-button:hover {
+  background-color: #0F3E20;
+  transition: transform 0.3s;
+  transform: scale(1.15);
+}
+.buttons .second-button:hover {
+  transition: transform 0.3s;
+  transform: scale(1.15);
+}
+
 @media only screen and (min-width: 1900px) {
   .buttons .first-button {
     width: 208px;
@@ -183,6 +194,12 @@
   background-color: #1B5B31;
   border-radius: 200px;
   width: 194px;
+  transition: background-color 0.3s, transform 0.3s, border-color 0.3s;
+}
+.check-us-button:hover{
+  background-color: #0F3E20; /* Nowy kolor tła po najechaniu */
+  border-color: #0F3E20; /* Nowy kolor obramowania po najechaniu */
+  transform: scale(1.05); /* Powiększenie przycisku po najechaniu */
 }
 .realizations-small-header {
   font-size: 12px;
@@ -233,6 +250,21 @@
   border: 1px solid #111111;
   background-color: #DCC1AB;
 }
+.more-button:hover{
+  transform: scale(1.05) translateY(-5px);
+  animation: bounce 1s ease infinite; 
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); 
+  }
+  40% {
+    transform: translateY(-15px); 
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
 .grid-item-opacity {
   opacity: 0.4;
 }
@@ -257,6 +289,11 @@
   background-color: #F5F0EC;
   padding: 10px 24px 12px 24px;
   color: #1B5B31;
+  transition: background-color 0.3s, color 0.3s;
+}
+.contact-button:hover {
+  transition: transform 0.3s;
+  transform: scale(1.15);
 }
 .contact-text p {
   color: #F5F0EC;
